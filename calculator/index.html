@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-Calcyy</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/fevicon.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <div class="cal-body">
+            <div id="input-bord">
+                <input type="text" id="display" placeholder=" 0">
+            </div>
+            <div class="row">
+                <button class="cal-btn" onclick="all_clear()">AC</button>
+                <button class="cal-btn" onclick="clear_one()">DEL</button>
+                <button class="cal-btn" onclick="clicked('%')">%</button>
+                <button class="cal-btn" onclick="clicked('/')">/</button>
+            </div>
+            <div class="row">
+                <button class="cal-btn" onclick="clicked('7')">7</button>
+                <button class="cal-btn" onclick="clicked('8')">8</button>
+                <button class="cal-btn" onclick="clicked('9')">9</button>
+                <button class="cal-btn" onclick="clicked('*')">*</button>
+            </div>
+            <div class="row">
+                <button class="cal-btn" onclick="clicked('4')">4</button>
+                <button class="cal-btn" onclick="clicked('5')">5</button>
+                <button class="cal-btn" onclick="clicked('6')">6</button>
+                <button class="cal-btn" onclick="clicked('+')">+</button>
+            </div>
+            <div class="row">
+                <button class="cal-btn" onclick="clicked('1')">1</button>
+                <button class="cal-btn" onclick="clicked('2')">2</button>
+                <button class="cal-btn" onclick="clicked('3')">3</button>
+                <button class="cal-btn" onclick="clicked('-')">-</button>
+            </div>
+            <div class="row">
+                <button class="cal-btn" onclick="clicked('0')">0</button>
+                <button class="cal-btn" onclick="clicked('.')">.</button>
+                <button class="cal-btn equal-btn" onclick="show_result()">=</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="calci.js"></script>
+</body>
+</html>
